@@ -21,6 +21,11 @@
       type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
+    <link rel="stylesheet" href="./jquery.fullPage.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    /> -->
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -29,10 +34,12 @@
         <div class="header-wrap">
           <h1 class="logo">
             <a href="/" class="logo-m sm-only">
-              <img src="./asset/m_logo2.png" alt="CELLIVERY" />
+              <img src="./asset/m_logo2.png" alt="CELLIVERY" class="color" />
+              <img src="./asset/logo_w.png" alt="CELLIVERY" class="white" />
             </a>
             <a href="/" class="logo-pc sm-hidden">
-              <img src="./asset/logo.png" alt="CELLIVERY" />
+              <img src="./asset/logo.png" alt="CELLIVERY" class="color" />
+              <img src="./asset/logo_w.png" alt="CELLIVERY" class="white" />
             </a>
           </h1>
           <nav class="gnb lg-only">
@@ -97,210 +104,463 @@
         </div>
       </div>
     </header>
-    <section class="main-visual">
-      <div class="main-slider">
-        <div class="main-slider-item main-slider-item-1">
-          <div class="main-text-wrap">
-            <div class="main-text-container">
-              <h1>
-                Bio-Based Premium<br />
-                Living & Health
-              </h1>
-            </div>
-            <div class="sub-text-container">
-              <p>
-                (주)셀리버리의 바이오 기술을 기반으로 <br />
-                안전하게 사용 가능한 프리미엄 생활건강 <br class="sm-only" />
-                제품을 지향합니다
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="main-slider-item main-slider-item-2">
-          <div class="main-text-wrap">
-            <div class="main-text-container">
-              <h1>
-                Make Your Life <br />
-                Better
-              </h1>
-            </div>
-            <div class="sub-text-container">
-              <p>
-                주변에서 쉽게 접할 수 있는 제품을 통해
-                <br class="sm-only" />당신의 삶의 질을 업그레이드 합니다.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="main-slider-item main-slider-item-3">
-          <div class="main-text-wrap">
-            <div class="main-text-container">
-              <h1>
-                Think Differently, <br />
-                Make a Trend
-              </h1>
-            </div>
-            <div class="sub-text-container">
-              <p>
-                글로벌 시장에서 인정받은 바이오 기술력으로 <br />
-                새로운 리빙앤헬스 트렌드를 만들어갑니다.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="button-wrap sm-hidden">
-        <button class="prev-button" type="button">
-          <img src="./asset/arrow-left.png" alt="prev button" />
-        </button>
-        <button class="next-button" type="button">
-          <img src="./asset/arrow-right.png" alt="next button" />
-        </button>
-      </div>
-    </section>
-    <section class="about">
-      <div class="container3">
-        <div class="about-image-wrap">
-          <img class="sm-only" src="./asset/m_section02_img.jpg" alt="" />
-          <img class="sm-hidden" src="./asset/sec02-img.jpg" alt="" />
-        </div>
-        <div class="about-text-wrap">
-          <div class="about-title-wrap">
-            <h2>
-              CELLIVERY<br />
-              Living & Health
-            </h2>
-          </div>
-          <div class="about-sub-wrap">
-            <p>
-              (주)셀리버리 리빙앤헬스는<br class="sm-only" />
-              뷰티 & 생활건강 제품에 대한<br class="sm-hidden" />상식을
-              뛰어넘어<br />글로벌 시장을 선도하는 바이오 기술을 통해<br />
-              모든 사람들에게 안전하고 효과적인 솔루션을 제공합니다.
-            </p>
-          </div>
-          <a class="about-more-button" href="/">
-            <img class="effect-image" src="./asset/m_svgImg.png" alt="" />
-            <div class="arrow-wrap">
-              <div class="arrow-image-wrap">
-                <img src="./asset/mo_arrow02.png" alt="" />
+    <div id="fullpage">
+      <section class="section fp-auto-height-responsive main-visual">
+        <div class="main-slider">
+          <div class="main-slider-item main-slider-item-1">
+            <div class="main-text-wrap">
+              <div class="main-text-container">
+                <h1>
+                  Bio-Based Premium<br />
+                  Living & Health
+                </h1>
               </div>
-              <span>BROWSE MORE</span>
+              <div class="sub-text-container">
+                <p>
+                  (주)셀리버리의 바이오 기술을 기반으로 <br />
+                  안전하게 사용 가능한 프리미엄 생활건강 <br class="sm-only" />
+                  제품을 지향합니다
+                </p>
+              </div>
             </div>
-          </a>
+          </div>
+          <div class="main-slider-item main-slider-item-2">
+            <div class="main-text-wrap">
+              <div class="main-text-container">
+                <h1>
+                  Make Your Life <br />
+                  Better
+                </h1>
+              </div>
+              <div class="sub-text-container">
+                <p>
+                  주변에서 쉽게 접할 수 있는 제품을 통해
+                  <br class="sm-only" />당신의 삶의 질을 업그레이드 합니다.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="main-slider-item main-slider-item-3">
+            <div class="main-text-wrap">
+              <div class="main-text-container">
+                <h1>
+                  Think Differently, <br />
+                  Make a Trend
+                </h1>
+              </div>
+              <div class="sub-text-container">
+                <p>
+                  글로벌 시장에서 인정받은 바이오 기술력으로 <br />
+                  새로운 리빙앤헬스 트렌드를 만들어갑니다.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="business">
+        <div class="button-wrap sm-hidden">
+          <button class="prev-button" type="button">
+            <img src="./asset/arrow-left.png" alt="prev button" />
+          </button>
+          <button class="next-button" type="button">
+            <img src="./asset/arrow-right.png" alt="next button" />
+          </button>
+        </div>
+      </section>
+      <section class="section fp-auto-height-responsive about">
+        <div class="container3">
+          <div class="about-image-wrap">
+            <img class="sm-only" src="./asset/m_section02_img.jpg" alt="" />
+            <img class="sm-hidden" src="./asset/sec02-img.jpg" alt="" />
+          </div>
+          <div class="about-text-wrap">
+            <div class="about-title-wrap">
+              <h2 class="fade-in">
+                CELLIVERY<br />
+                Living & Health
+              </h2>
+            </div>
+            <div class="about-sub-wrap">
+              <p class="fade-in">
+                (주)셀리버리 리빙앤헬스는<br class="sm-only" />
+                뷰티 & 생활건강 제품에 대한<br class="sm-hidden" />상식을
+                뛰어넘어<br />글로벌 시장을 선도하는 바이오 기술을 통해<br />
+                모든 사람들에게 안전하고 효과적인 솔루션을 제공합니다.
+              </p>
+            </div>
+            <a class="browse-more-button" href="/">
+              <img class="effect-image" src="./asset/m_svgImg.png" alt="" />
+              <div class="arrow-wrap">
+                <div class="arrow-image-wrap">
+                  <img src="./asset/mo_arrow02.png" alt="" />
+                </div>
+                <span>BROWSE MORE</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="section fp-auto-height-responsive business">
+        <div class="container2">
+          <h2 class="business-title fade-in">Business</h2>
+          <ul class="business-list">
+            <li class="business-item fade-in">
+              <h3>Beauty</h3>
+              <div class="content-wrap">
+                <p class="business-text lg-only">
+                  화장품의 패러다임을 바꾸는 새로운 제품을 선보입니다. 바이오
+                  기술력을 기반으로 실질적인 피부 개선을 보이는뷰티 제품을
+                  제안합니다.
+                </p>
+                <a class="more-button" href="/">
+                  <img src="./asset/mo_arrow03.png" alt="" />
+                </a>
+              </div>
+              <div class="cursor"></div>
+            </li>
+            <li class="business-item fade-in">
+              <h3>Living&Health</h3>
+              <div class="content-wrap">
+                <p class="business-text lg-only">
+                  안심하고 사용할 수 있는 프리미엄 리빙앤헬스 제품을 만듭니다.
+                  헤어케어, 바디케어 등 일상생활에 편리한 다양한 제품을
+                  선보입니다.
+                </p>
+                <a class="more-button" href="/">
+                  <img src="./asset/mo_arrow03.png" alt="" />
+                </a>
+              </div>
+              <div class="cursor"></div>
+            </li>
+            <li class="business-item fade-in">
+              <h3>Biocare Tissue</h3>
+              <div class="content-wrap">
+                <p class="business-text lg-only">
+                  바이오케어 티슈 시장의 새로운 트렌드를 선도합니다. 완제품의
+                  안전성 뿐만 아니라 원단·부재료 등에서도 새로운 표준을
+                  제시합니다.
+                </p>
+                <a class="more-button" href="/">
+                  <img src="./asset/mo_arrow03.png" alt="" />
+                </a>
+              </div>
+              <div class="cursor"></div>
+            </li>
+            <li class="business-item fade-in">
+              <h3>ODM</h3>
+              <div class="content-wrap">
+                <p class="business-text lg-only">
+                  34년 업력의 물티슈 자체 생산시설을 보유하고 있습니다.
+                  고객사와의 동반 성장을 위해 꾸준한 연구개발을 거쳐 우수한
+                  제품을 개발합니다.
+                </p>
+                <a class="more-button" href="/">
+                  <img src="./asset/mo_arrow03.png" alt="" />
+                </a>
+              </div>
+              <div class="cursor"></div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section fp-auto-height-responsive rnd">
+        <div class="container4">
+          <div class="rnd-box is-technology">
+            <div class="rnd-contents-wrap">
+              <div class="rnd-text-wrap">
+                <div>
+                  <h2 class="rnd-title">Technology</h2>
+                  <p class="rnd-text">
+                    진보된 바이오 기술력을 기반으로 한 특허 기술 및 원료
+                  </p>
+                </div>
+              </div>
+              <a class="browse-more-button" href="/">
+                <img class="effect-image" src="./asset/m_svgImg.png" alt="" />
+                <div class="arrow-wrap">
+                  <div class="arrow-image-wrap">
+                    <img src="./asset/mo_arrow01.png" alt="" />
+                  </div>
+                  <span class="sm-hidden">BROWSE MORE</span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="rnd-box is-research">
+            <div class="rnd-contents-wrap">
+              <div class="rnd-text-wrap">
+                <div>
+                  <h2 class="rnd-title">Research</h2>
+                  <p class="rnd-text">
+                    외부 인체적용시험을 통해 인정받은 효능 효과
+                  </p>
+                </div>
+              </div>
+              <a class="browse-more-button" href="/">
+                <img class="effect-image" src="./asset/m_svgImg.png" alt="" />
+                <div class="arrow-wrap">
+                  <div class="arrow-image-wrap">
+                    <img src="./asset/mo_arrow01.png" alt="" />
+                  </div>
+                  <span class="sm-hidden">BROWSE MORE</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section fp-auto-height-responsive pr">
+        <div class="container2">
+          <div class="pr-title-wrap">
+            <h2 class="pr-title fade-in">PR</h2>
+            <a class="browse-more-button" href="/">
+              <img class="effect-image" src="./asset/m_svgImg.png" alt="" />
+              <div class="arrow-wrap">
+                <div class="arrow-image-wrap">
+                  <img src="./asset/mo_arrow02.png" alt="" />
+                </div>
+                <span>BROWSE MORE</span>
+              </div>
+            </a>
+          </div>
+          <ul class="pr-list">
+            <li class="pr-item">
+              <div>
+                <img src="./asset/m_sec05_img01.jpg" alt="더라퓨즈" />
+                <a class="lg-hidden more-button" href="/">
+                  <img src="./asset/mo_arrow03.png" alt="" />
+                </a>
+                <a class="lg-only browse-more-button" href="/">
+                  <img
+                    class="effect-image"
+                    src="./asset/m_svgImg_fff.png"
+                    alt=""
+                  />
+                  <div class="arrow-wrap">
+                    <div class="arrow-image-wrap">
+                      <img src="./asset/mo_arrow02.png" alt="" />
+                    </div>
+                    <span>BROWSE MORE</span>
+                  </div>
+                </a>
+              </div>
+              <p class="pr-text fade-in">
+                셀리버리 리빙앤헬스, 스킨케어 브랜드 「더 라퓨즈」 글로벌 K뷰티
+                브랜드로 발전
+              </p>
+            </li>
+            <li class="pr-item">
+              <div>
+                <img src="./asset/m_sec05_img02.jpg" alt="바이오늘" />
+                <a class="lg-hidden more-button" href="/">
+                  <img src="./asset/mo_arrow03.png" alt="" />
+                </a>
+                <a class="lg-only browse-more-button" href="/">
+                  <img
+                    class="effect-image"
+                    src="./asset/m_svgImg_fff.png"
+                    alt=""
+                  />
+                  <div class="arrow-wrap">
+                    <div class="arrow-image-wrap">
+                      <img src="./asset/mo_arrow02.png" alt="" />
+                    </div>
+                    <span>BROWSE MORE</span>
+                  </div>
+                </a>
+              </div>
+              <p class="pr-text fade-in">
+                셀리버리 리빙앤헬스, 바이오케어 티슈 브랜드 바이오늘 론칭
+              </p>
+            </li>
+            <li class="pr-item">
+              <div>
+                <img src="./asset/thumbnail_pc.jpg" alt="" />
+                <a class="lg-hidden more-button" href="/">
+                  <img src="./asset/mo_arrow03.png" alt="" />
+                </a>
+                <a class="lg-only browse-more-button" href="/">
+                  <img
+                    class="effect-image"
+                    src="./asset/m_svgImg_fff.png"
+                    alt=""
+                  />
+                  <div class="arrow-wrap">
+                    <div class="arrow-image-wrap">
+                      <img src="./asset/mo_arrow02.png" alt="" />
+                    </div>
+                    <span>BROWSE MORE</span>
+                  </div>
+                </a>
+              </div>
+              <p class="pr-text fade-in">2022 신년인사</p>
+            </li>
+            <li class="pr-item">
+              <div>
+                <img src="./asset/m_sec05_img04.jpg" alt="" />
+                <a class="lg-hidden more-button" href="/">
+                  <img src="./asset/mo_arrow03.png" alt="" />
+                </a>
+                <a class="lg-only browse-more-button" href="/">
+                  <img
+                    class="effect-image"
+                    src="./asset/m_svgImg_fff.png"
+                    alt=""
+                  />
+                  <div class="arrow-wrap">
+                    <div class="arrow-image-wrap">
+                      <img src="./asset/mo_arrow02.png" alt="" />
+                    </div>
+                    <span>BROWSE MORE</span>
+                  </div>
+                </a>
+              </div>
+              <p class="pr-text fade-in">셀리버리 리빙앤헬스 홈페이지 오픈</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <footer class="section fp-auto-height">
+        <div class="footer-container">
+          <h1 class="sm-hidden footer-logo">
+            <a href="/">
+              <img src="./asset/logo_w.png" alt="Cellivery" />
+            </a>
+          </h1>
+          <div class="footer-wrap">
+            <div class="footer-text-wrap">
+              <ul class="footer-list">
+                <li><a href="/">이용약관</a></li>
+                <li><a href="/">개인정보처리방침</a></li>
+                <li><a href="/">이메일무단수집거부</a></li>
+                <li><a href="/">CONTACT</a></li>
+              </ul>
+              <dl class="footer-list01">
+                <div class="footer-item">
+                  <dt>TEL</dt>
+                  <dd><a href="tel:0212345678">02-1234-5678</a></dd>
+                </div>
+                <div class="footer-item">
+                  <dt>FAX</dt>
+                  <dd>02-333-5555</dd>
+                </div>
+                <div class="footer-item">
+                  <dt>ADDRESS</dt>
+                  <dd>서울시 마포구 성암로 179, B1(03929)</dd>
+                </div>
+              </dl>
+              <dl class="footer-list02">
+                <div class="footer-item">
+                  <dt>업체명</dt>
+                  <dd>(주)셀리버리 리빙앤헬스 이천공장</dd>
+                </div>
+                <div class="footer-item">
+                  <dt>대표자명</dt>
+                  <dd>김철수</dd>
+                </div>
+                <div class="footer-item">
+                  <dt>사업자등록번호</dt>
+                  <dd>123-34-45678</dd>
+                </div>
+                <div class="footer-item">
+                  <dt>주소</dt>
+                  <dd>경기도 이천시 백사면 청백리로 873</dd>
+                </div>
+              </dl>
+              <p class="copyright sm-hidden">
+                Copyright ⒞ 2022. Cellivery Living & Health Inc. All Rights
+                Reserved.
+              </p>
+            </div>
+            <div class="familly-site">
+              <p>Familly site</p>
+              <img src="./asset/select-down.png" alt="" />
+              <div class="familly-site-item">
+                <a href="/">(주)셀리버리</a>
+              </div>
+            </div>
+          </div>
+          <p class="copyright sm-only">
+            Copyright ⒞ 2022. Cellivery Living & Health Inc. All Rights
+            Reserved.
+          </p>
+        </div>
+      </footer>
+    </div>
+    <aside class="sidebar lg-only">
+      <ul class="sidebar-button-list">
+        <li data-menuanchor="section1" class="sidebar-button-item">
+          <a href="#section1"></a>
+        </li>
+        <li data-menuanchor="section2" class="sidebar-button-item">
+          <a href="#section2"></a>
+        </li>
+        <li data-menuanchor="section3" class="sidebar-button-item">
+          <a href="#section3"></a>
+        </li>
+        <li data-menuanchor="section4" class="sidebar-button-item">
+          <a href="#section4"></a>
+        </li>
+        <li data-menuanchor="section5" class="sidebar-button-item">
+          <a href="#section5"></a>
+        </li>
+      </ul>
+    </aside>
+    <aside class="menu">
       <div class="container2">
-        <h2 class="business-title">Business</h2>
-        <ul class="business-list">
-          <li class="business-item">
-            <h3>Beauty</h3>
-            <div class="content-wrap">
-              <p class="business-text lg-only">
-                화장품의 패러다임을 바꾸는 새로운 제품을 선보입니다. 바이오
-                기술력을 기반으로 실질적인 피부 개선을 보이는뷰티 제품을
-                제안합니다.
-              </p>
-              <a class="business-more-button" href="/">
-                <img src="./asset/mo_arrow03.png" alt="" />
-              </a>
-            </div>
-            <div class="cursor"></div>
+        <ul class="menu-list">
+          <li class="menu-item">
+            <button type="button" class="drawer-menu-button">ABOUT</button>
+            <ul class="drawer-menu-list">
+              <li class="drawer-menu-item"><a href="/">Cellivery L&H</a></li>
+              <li class="drawer-menu-item"><a href="/">History</a></li>
+              <li class="drawer-menu-item"><a href="/">Value</a></li>
+              <li class="drawer-menu-item"><a href="/">CI</a></li>
+            </ul>
           </li>
-          <li class="business-item">
-            <h3>Living&Health</h3>
-            <div class="content-wrap">
-              <p class="business-text lg-only">
-                안심하고 사용할 수 있는 프리미엄 리빙앤헬스 제품을 만듭니다.
-                헤어케어, 바디케어 등 일상생활에 편리한 다양한 제품을
-                선보입니다.
-              </p>
-              <a class="business-more-button" href="/">
-                <img src="./asset/mo_arrow03.png" alt="" />
-              </a>
-            </div>
-            <div class="cursor"></div>
+          <li class="menu-item">
+            <button type="button" class="drawer-menu-button">R&D</button>
+            <ul class="drawer-menu-list">
+              <li class="drawer-menu-item"><a href="/">Technology</a></li>
+              <li class="drawer-menu-item"><a href="/">Research</a></li>
+            </ul>
           </li>
-          <li class="business-item">
-            <h3>Biocare Tissue</h3>
-            <div class="content-wrap">
-              <p class="business-text lg-only">
-                바이오케어 티슈 시장의 새로운 트렌드를 선도합니다. 완제품의
-                안전성 뿐만 아니라 원단·부재료 등에서도 새로운 표준을
-                제시합니다.
-              </p>
-              <a class="business-more-button" href="/">
-                <img src="./asset/mo_arrow03.png" alt="" />
-              </a>
-            </div>
-            <div class="cursor"></div>
+          <li class="menu-item">
+            <button type="button" class="drawer-menu-button">BUSINESS</button>
+            <ul class="drawer-menu-list">
+              <li class="drawer-menu-item"><a href="/">Beauty</a></li>
+              <li class="drawer-menu-item">
+                <a href="/">Living & Health</a>
+              </li>
+              <li class="drawer-menu-item">
+                <a href="/">Bio-Care Tissue</a>
+              </li>
+              <li class="drawer-menu-item"><a href="/">ODM</a></li>
+            </ul>
           </li>
-          <li class="business-item">
-            <h3>ODM</h3>
-            <div class="content-wrap">
-              <p class="business-text lg-only">
-                34년 업력의 물티슈 자체 생산시설을 보유하고 있습니다. 고객사와의
-                동반 성장을 위해 꾸준한 연구개발을 거쳐 우수한 제품을
-                개발합니다.
-              </p>
-              <a class="business-more-button" href="/">
-                <img src="./asset/mo_arrow03.png" alt="" />
-              </a>
-            </div>
-            <div class="cursor"></div>
+          <li class="menu-item">
+            <button type="button" class="drawer-menu-button">BRAND</button>
+            <ul class="drawer-menu-list">
+              <li class="drawer-menu-item"><a href="/">Bio:neul</a></li>
+              <li class="drawer-menu-item"><a href="/">The Rapuez</a></li>
+              <li class="drawer-menu-item"><a href="/">Coming Soon</a></li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <button type="button" class="drawer-menu-button">PR</button>
+            <ul class="drawer-menu-list">
+              <li class="drawer-menu-item"><a href="/">Notice</a></li>
+              <li class="drawer-menu-item"><a href="/">News</a></li>
+              <li class="drawer-menu-item"><a href="/">Media</a></li>
+              <li class="drawer-menu-item"><a href="/">SNS</a></li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <button type="button" class="drawer-menu-button">CAREER</button>
           </li>
         </ul>
       </div>
-    </section>
-    <section class="rnd">
-      <div class="container4">
-        <div class="rnd-box is-technology">
-          <div class="rnd-contents-wrap">
-            <div class="rnd-text-wrap">
-              <div>
-                <h2 class="rnd-title">Technology</h2>
-                <p class="rnd-text">
-                  진보된 바이오 기술력을 기반으로 한 특허 기술 및 원료
-                </p>
-              </div>
-            </div>
-            <a class="rnd-more-button" href="/">
-              <img class="effect-image" src="./asset/m_svgImg.png" alt="" />
-              <div class="arrow-wrap">
-                <div class="arrow-image-wrap">
-                  <img src="./asset/mo_arrow01.png" alt="" />
-                </div>
-                <span class="sm-hidden">BROWSE MORE</span>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="rnd-box is-research">
-          <div class="rnd-contents-wrap">
-            <div class="rnd-text-wrap">
-              <div>
-                <h2 class="rnd-title">Research</h2>
-                <p class="rnd-text">
-                  외부 인체적용시험을 통해 인정받은 효능 효과
-                </p>
-              </div>
-            </div>
-            <a class="rnd-more-button" href="/">
-              <img class="effect-image" src="./asset/m_svgImg.png" alt="" />
-              <div class="arrow-wrap">
-                <div class="arrow-image-wrap">
-                  <img src="./asset/mo_arrow01.png" alt="" />
-                </div>
-                <span class="sm-hidden">BROWSE MORE</span>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <aside class="sidebar"></aside>
+      <div class="menu-sidebar"></div>
+    </aside>
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
@@ -312,5 +572,7 @@
     ></script>
     <script src="./main.js"></script>
     <script src="./slick-carousel.js"></script>
+    <script src="jquery.fullPage.js"></script>
+    <script src="./fullpage.js"></script>
   </body>
 </html>
