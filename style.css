@@ -1600,6 +1600,7 @@ dl.footer-list01 .footer-item:nth-child(3) {
   }
 
   .footer-container {
+    position: relative;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -1642,7 +1643,7 @@ dl.footer-list01 .footer-item:nth-child(3) {
     width: 10.417vw;
     height: 100vh;
     border-left: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: #fff;
+    background-color: transparent;
     transition: background-color 200ms ease-in;
   }
 
