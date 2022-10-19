@@ -6,6 +6,7 @@ $(".main-slider").slick({
   nextArrow: $(".next-button"),
   dots: true,
   pauseOnHover: false,
+  pauseOnFocus: false,
 });
 
 $("#slick-slide-control00").html(
